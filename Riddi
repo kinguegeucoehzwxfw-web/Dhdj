@@ -1,0 +1,13 @@
+local args = {
+	workspace:WaitForChild("Monster"):WaitForChild("Big Floppa"),
+	"Floppa",
+	"Z",
+	{
+		Skill_Type = "Enemy_Effect",
+		Mouse_Position = vector.create(283.2342834472656, -7.1804680824279785, -1967.7169189453125),
+		Moving_Speed = 275,
+		Weapon_Effect = true,
+		RootPart_Position = vector.create(439.80859375, -3.37890625, -1488.98828125)
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("OtherEvent"):WaitForChild("SkillEvents"):WaitForChild("Server_Hitbox"):FireServer(unpack(args))
